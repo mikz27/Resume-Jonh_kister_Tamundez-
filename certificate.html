@@ -1,0 +1,272 @@
+<link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet">
+
+
+<!-- MAIN CONTAINER -->
+		<div id="main_container">
+      <!-- HEADER -->
+      <div id="header">
+        <!-- LOGOTYPE/NAME -->
+        <div class="header_logotype_container">
+          <h1 class="logotype_name">Jonh Kister <span class="purple">Tamundez</span></h1>
+          <!-- <h2 class="logotype_occupation">Frontend Web Developer</h2> -->
+        </div>
+        <!-- MAIN MENU -->
+        <div class="header_menu_container">
+          <!-- <ul class="download_print_buttons horizontal_list">
+            <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
+            <li><a href="#"><span class="icon entypo-print"></span>Print CV</a></li>
+          </ul> -->
+          <div class="clear"></div>
+          <ul class="header_menu horizontal_list">
+            <li><a href="CV\index.html">Profile</a></li>
+            <li><a href="CV\education.html">Education</a></li>
+            <li><a href="CV\skills.html">Skills</a></li>
+            <li><a href="CV\work_experience.html">Work Experience</a></li>
+            <!-- <li><a href="#">Featured Projects</a></li> -->
+            <li><a class="no_border purple" href="CV\certificate.html">Certificates</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- LEFT COL -->
+      <div id="left_col">
+        <div 
+  class="profile_frame" 
+  style="width: 200px; height: 200px; display: flex; justify-content: center; align-items: center; border: 2px solid #ccc; border-radius: 50%; overflow: hidden; position: relative; background-color: #f0f0f0;"
+>
+  <div 
+    class="profile_picture" 
+    style="width: 100%; height: 100%; position: absolute;"
+  >
+    <img 
+      src="image/1721364444250.jpeg" 
+      alt="profile picture" 
+      style="width: 100%; height: 100%; object-fit: cover; position: absolute;"
+    >
+  </div>
+</div>
+
+        <div class="hello_content">
+          <!-- <h2>Hello!</h2>
+          <p>I am a fast learner with a strong willingness to acquire new skills and adapt to challenges.  I am passionate about leveraging my technical skills to solve problems and create innovative</p> -->
+        </div>
+        <div class="contact_details_content">
+          <h2>Contact details</h2>
+          <p class="purple">Phone:</p>
+          <p>+63 960 239 7084</p>
+          <p class="purple">Email:</p>
+          <p>kistertamundez1927@gmail.com</p>
+          <p class="purple">Adress:</p>
+          <p>San Miguel</p>
+          <p>Bulacan, Philippines</p>
+          <p>3011</p>
+        </div>
+        <a href="kistertamundez1927@gmail.com" class="send_message_button">
+          <span class="cut1"></span>
+          <span class="cut2"></span>
+          <span class="content">Send me a message <span class="fontawesome-double-angle-right"></span></span>
+        </a>
+        <!-- <div class="get_social_content">
+          <h2>Get social</h2>
+          <ul class="social_icons horizontal_list">
+            <li><a class="facebook" href="https://www.facebook.com/"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li>
+            <li><a class="twitter" href="https://twitter.com/"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
+          </ul>
+        </div> -->
+      </div>
+      <!-- PROFILE CONTENT -->
+      <div id="content_container">				
+        <!-- <div class="block"> -->
+          <!-- <h1>Skills</h1> -->
+          <!-- <blockquote class="profile_quote"> -->
+            <!-- <p>Fast learner and willingness to learn new. Computer Troubleshooting and Computer Networking.</p> -->
+            <!-- <p>-Hachiman Hikigaya.</p> -->
+            <!-- <span class="entypo-quote"></span> -->
+          <!-- </blockquote> -->
+        <!-- </div> -->
+      
+          <div class="block">
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .column img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .column img:hover {
+      transform: scale(1.05);
+      border-color: #000;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="column">
+      <img src="certificates\python.jpg" alt="Certificate 1" onclick="showModal(this.src)">
+    </div>
+    <div class="column">
+      <img src="certificates\y4it.png" alt="Certificate 2" onclick="showModal(this.src)">
+    </div>
+    <div class="column">
+      <img src="certificates\Ojt cert.jpg" alt="Certificate 3" onclick="showModal(this.src)">
+    </div>
+    <div class="column">
+      <img src="certificates\84 Vawc-Cert.jpg" alt="Certificate 3" onclick="showModal(this.src)">
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Expanded Certificate">
+  </div>
+
+  <script>
+    function showModal(src) {
+      const modal = document.getElementById('modal');
+      const modalImage = document.getElementById('modalImage');
+      modal.style.display = 'flex';
+      modalImage.src = src;
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+
+          </div>
+          <div class="horizontal_line">
+            <div class="line_left"></div>
+            <div class="left_circle"></div>
+            <div class="central_circle"></div>
+            <div class="right_circle"></div>
+            <div class="line_right"></div>
+          </div>
+          <div class="block">
+            <h1>Sample project from OJT</h1>
+            <div class="container">
+              <div class="column">
+                <iframe 
+                  src="SEO_template\index.html" 
+                  title="Template 1" 
+                  onclick="openPopup(this.src)" 
+                  style="width: 700px; height: 500px; border: 2px solid #ccc; border-radius: 5px;">
+                </iframe>
+                <!-- <button 
+        onclick="window.open('SEO_template\index.html', '_blank')" 
+        style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">
+        View
+      </button> -->
+              </div>
+            </div>
+          </div>
+          
+          <div class="horizontal_line">
+            <div class="line_left"></div>
+            <div class="left_circle"></div>
+            <div class="central_circle"></div>
+            <div class="right_circle"></div>
+            <div class="line_right"></div>
+          </div>
+          <div class="block">
+            <div class="container">
+              <div class="column">
+                <iframe 
+                  src="JERS_AC_Gym _Exercise_Equipment\index.html" 
+                  title="Template 1" 
+                  onclick="openPopup(this.src)" 
+                  style="width: 700px; height: 500px; border: 2px solid #ccc; border-radius: 5px;">
+                </iframe>
+                <!-- <button 
+        onclick="window.open('C:\Users\Kister\Desktop\CV\JERS_AC_Gym _Exercise_Equipment\index.html', '_blank')" 
+        style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">
+        View
+      </button> -->
+              </div>
+            </div>
+          </div>
+          
+  
+
+          <div class="last block">
+            <!-- <h2>Databases</h2>
+            <ul>
+              <li>MySQL</li>
+              <li>Microsoft Access</li>
+            </ul> -->
+          </div>
+      </div>
+      <div class="clear"></div>
+      
+      <!-- FOOTER -->
+      <div id="footer">
+        <p class="footer_name">Jonh Kister Tamundez CV 2024</p>
+      </div>
+		</div>
